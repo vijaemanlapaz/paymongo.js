@@ -90,7 +90,10 @@ export type StatusType = "pending" | "paid" | string;
 export type WebhookEvent =
   | "source.chargeable"
   | "payment.paid"
-  | "payment.failed";
+  | "payment.failed"
+  | "payment.refund.updated"
+  | "payment.refunded"
+  | "link.payment.paid";
 
 /**
  * @property {string} name - Name of the billing information

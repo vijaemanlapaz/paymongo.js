@@ -67,7 +67,7 @@ export declare type RedirectType = {
     checkout_url?: string;
 };
 export declare type StatusType = "pending" | "paid" | string;
-export declare type WebhookEvent = "source.chargeable" | "payment.paid" | "payment.failed";
+export declare type WebhookEvent = "source.chargeable" | "payment.paid" | "payment.failed" | "payment.refund.updated" | "payment.refunded" | "link.payment.paid";
 /**
  * @property {string} name - Name of the billing information
  * @property {string} phone - Phone number of the billing information
